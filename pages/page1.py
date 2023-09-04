@@ -14,5 +14,7 @@ if uploaded_file is not None:
     dataframe = pd.read_csv(uploaded_file)
     columns=['Temperatura', 'Humedad'])
     st.write(dataframe)
+    chart_data = pd.DataFrame(dataframe, columns=['Temp', 'Hum'])
+    st.line_chart(chart_data)
     st.subheader('Estadisticos Básicos')
     st.write(dataframe.describe())
