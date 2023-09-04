@@ -1,13 +1,13 @@
 import streamlit as st
 
-st.title('Página 1')
+st.title('Análisis de Datos')
 
 
 import streamlit as st
 import pandas as pd
 #from io import StringIO
 
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
 column_names=["Humedad","Temperatura"]
 if uploaded_file is not None:
  
