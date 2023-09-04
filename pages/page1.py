@@ -8,11 +8,12 @@ import pandas as pd
 #from io import StringIO
 
 uploaded_file = st.file_uploader("Choose a file")
+column_names=["Temperatura","Humedad"]
 if uploaded_file is not None:
  
     # Can be used wherever a "file-like" object is accepted:
-    dataframe = pd.read_csv(uploaded_file)
-    columns=['Temperatura', 'Humedad'])
+    dataframe = pd.read_csv(uploaded_file, names=column_names)
+  
     st.write(dataframe)
     chart_data = pd.DataFrame(dataframe, columns=['Temp', 'Hum'])
     st.line_chart(chart_data)
