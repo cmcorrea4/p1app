@@ -21,8 +21,14 @@ if uploaded_file is not None:
     st.subheader('Estadisticos Básicos')
     st.write(dataframe.describe())
     st.write(len(dataframe))
-    inicio = datetime.now()
-    timestamps = [inicio + timedelta(seconds=i) for i in range(len(dataframe))]
-    df = pd.DataFrame(index=timestamps)
-    st.write(df)
+
+    def generar_dataframe_con_timestamp(longitud):
+      inicio = datetime.now()
+      timestamps = [inicio + timedelta(seconds=i) for i in range(longitud)]
+      df = pd.DataFrame(index=timestamps)
+      return df
+    longitud_dataframe = 10
+    dataframe_con_timestamp = generar_dataframe_con_timestamp(longitud_dataframe)
+
+    st.write(dataframe_con_timestamp)
 
