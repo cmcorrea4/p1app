@@ -17,7 +17,7 @@ if uploaded_file is not None:
   
     #st.write(dataframe)
     #chart_data = pd.DataFrame(dataframe, columns=['Humedad', 'Temperatura'])
-    st.line_chart(chart_data)
+    #st.line_chart(chart_data)
     st.subheader('Estadisticos Básicos')
     st.write(dataframe.describe())
     st.write(len(dataframe))
