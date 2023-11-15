@@ -31,7 +31,7 @@ if uploaded_file is not None:
     #dataframe_con_timestamp = generar_dataframe_con_timestamp(longitud_dataframe)
     d = st.date_input("Fecha Inicio de la medición")
     st.write(d)
-    t = st.time_input('Hora inicio',step=0:01:00)
+    t = st.time_input('Hora inicio',step=0:1:00)
     st.write(t)
     inicio = datetime.now()
     st.write(inicio)
