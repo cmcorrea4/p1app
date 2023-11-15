@@ -29,6 +29,6 @@ if uploaded_file is not None:
       return df
     longitud_dataframe = 10
     dataframe_con_timestamp = generar_dataframe_con_timestamp(longitud_dataframe)
-
-    st.write(dataframe_con_timestamp)
+    pdc=pd.concat([dataframe,dataframe_con_timestamp], join='inner', axis=1)
+    st.dataframe(pdc)
 
