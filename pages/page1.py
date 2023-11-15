@@ -29,8 +29,12 @@ if uploaded_file is not None:
       return df
     #longitud_dataframe = 10
     #dataframe_con_timestamp = generar_dataframe_con_timestamp(longitud_dataframe)
-    d = st.date_input("Comienzo de la medición")
-    inicio = d #datetime.now()
+    d = st.date_input("Fecha Inicio de la medición")
+    st.write(d)
+    t = st.time_input('Hora inicio')
+    st.write(d)
+    inicio = datetime.now()
+    st.write(inicio)
     indice_tiempo = pd.date_range(start=inicio, periods=len(dataframe), freq='5S')
     dataframe['Datetime'] =indice_tiempo
     dataframe = dataframe.set_index('Datetime')
