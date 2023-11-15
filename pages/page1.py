@@ -32,7 +32,7 @@ if uploaded_file is not None:
     d = st.date_input("Fecha Inicio de la medición")
     st.write(d)
     t = st.time_input('Hora inicio')
-    st.write(d)
+    st.write(t)
     inicio = datetime.now()
     st.write(inicio)
     indice_tiempo = pd.date_range(start=inicio, periods=len(dataframe), freq='5S')
