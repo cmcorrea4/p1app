@@ -19,3 +19,4 @@ if uploaded_file is not None:
     st.line_chart(chart_data)
     st.subheader('Estadisticos Básicos')
     st.write(dataframe.describe())
+    st.write(len(dataframe))
