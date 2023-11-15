@@ -5,6 +5,7 @@ st.title('Análisis de Datos')
 
 import streamlit as st
 import pandas as pd
+from datetime import datetime, timedelta
 #from io import StringIO
 
 uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
@@ -20,3 +21,8 @@ if uploaded_file is not None:
     st.subheader('Estadisticos Básicos')
     st.write(dataframe.describe())
     st.write(len(dataframe))
+    inicio = datetime.now()
+    timestamps = [inicio + timedelta(seconds=i) for i in range(len(dataframe))]
+    df = pd.DataFrame(index=timestamps)
+
+
