@@ -24,5 +24,5 @@ if uploaded_file is not None:
     inicio = datetime.now()
     timestamps = [inicio + timedelta(seconds=i) for i in range(len(dataframe))]
     df = pd.DataFrame(index=timestamps)
-
+    st.write(df)
 
