@@ -33,7 +33,7 @@ if uploaded_file is not None:
     st.write(d)
     t = st.time_input("Inicio")
     st.write(t)
-    inicio = datetime.now()
+    inicio = str(d)+str(t) #datetime.now()
     st.write(inicio)
     indice_tiempo = pd.date_range(start=inicio, periods=len(dataframe), freq='5S')
     dataframe['Datetime'] =indice_tiempo
