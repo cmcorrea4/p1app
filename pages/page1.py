@@ -27,8 +27,8 @@ if uploaded_file is not None:
       timestamps = [inicio + timedelta(seconds=i) for i in range(longitud)]
       df = pd.DataFrame(index=timestamps)
       return df
-    longitud_dataframe = 10
-    dataframe_con_timestamp = generar_dataframe_con_timestamp(longitud_dataframe)
+    #longitud_dataframe = 10
+    #dataframe_con_timestamp = generar_dataframe_con_timestamp(longitud_dataframe)
     inicio = datetime.now()
     indice_tiempo = pd.date_range(start=inicio, periods=10, freq='5S')
     pdc=pd.concat([dataframe,indice_tiempo], join='inner', axis=1)
