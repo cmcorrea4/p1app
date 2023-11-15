@@ -35,8 +35,8 @@ if uploaded_file is not None:
     st.write(t)
     inicio = str(d)+" "+str(t) #datetime.now()
     st.write(inicio)
-    indice_tiempo = pd.date_range(start=inicio, periods=len(dataframe), freq='5S')
-    dataframe['Datetime'] =indice_tiempo
-    dataframe = dataframe.set_index('Datetime')
+    indice_tiempo = pd.date_range(start=inicio, periods=len(dataframe), freq='2S')
+    dataframe['Fecha'] =indice_tiempo
+    dataframe = dataframe.set_index('Fecha')
     st.dataframe(dataframe)
-
+    st.line_chart(dataframe)
