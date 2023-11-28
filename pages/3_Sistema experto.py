@@ -33,7 +33,7 @@ ke = st.text_input('Escribe la clave.')
 try:
     os.environ['OPENAI_API_KEY'] = ke
     
-    pdfFileObj = open('Ruway.pdf', 'rb')
+    pdfFileObj = open('Cultivo.pdf', 'rb')
      
     # creating a pdf reader object
     pdfReader = PyPDF2.PdfReader(pdfFileObj)
