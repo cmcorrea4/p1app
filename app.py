@@ -7,7 +7,7 @@ st.title('Aplicaciones Tecnológicas para el Campo')
 st.header("MEJORA DE LA PRODUCTIVIDAD A TRAVÉS DEL USO DE TECNOLOGÍAS")
 
 
-image = Image.open("Agriculture.png")
+image = Image.open("Agriculture.jpg")
 st.image(image, caption="Tecnología para Productividad")
 
 st.write('El uso de tecnologías de la Industria 4.0 permitirá mejorar las condiciones'
