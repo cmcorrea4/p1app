@@ -29,7 +29,7 @@ st.image(image, width=600)
 
 st.write('Este sistema ayuda a resolver algunas cuestiones sobre este tema, pregunta ')
 
-ke = st.text_input('Escribe el código Secreto que te permite acceso al conocimiento de Ruway.')
+ke = st.text_input('Escribe la clave.')
 try:
     os.environ['OPENAI_API_KEY'] = ke
     
