@@ -3,7 +3,7 @@ import webbrowser
 import streamlit.components.v1 as components
 #import streamlit_authenticator as stauth
 #import pickle5 as pickle
-#from pathlib import Path
+from pathlib import Path
 
 st.title('Monitoreo de Sensores.')
 
