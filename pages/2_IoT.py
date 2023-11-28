@@ -7,6 +7,9 @@ from pathlib import Path
 
 st.title('Monitoreo de Sensores.')
 
+components.iframe("http://157.230.214.127:3000/d-solo/kDD_nDN4z/iwta-sensors?orgId=1&refresh=10s&  \
+            from=now-2h&to=now&&panelId=4&theme=light")
+
 st.header('Temperatura')
 components.html('''
 <object class="grafana-iframe"
