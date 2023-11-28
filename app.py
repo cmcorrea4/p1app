@@ -2,9 +2,9 @@ import streamlit as st
 from PIL import Image
 
 
-st.title('Aplicaciones Tecnológicas para el Campo')
+st.title('Aplicaciones Tecnológicas para el Campo.')
 
-st.header("MEJORA DE LA PRODUCTIVIDAD A TRAVÉS DEL USO DE TECNOLOGÍAS")
+st.header("MEJORA DE LA PRODUCTIVIDAD A TRAVÉS DEL USO DE TECNOLOGÍAS 4.0.")
 
 
 image = Image.open("Agriculture.jpg")
