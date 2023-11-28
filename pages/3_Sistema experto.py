@@ -23,7 +23,7 @@ except:
 
 st.title('Sistema Experto. 💬')
 
-image = Image.open('wisdom_farmer.jpg')
+image = Image.open('Wisdom_Farmer.jpg')
 
 st.image(image, width=600)
 
