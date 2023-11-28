@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.title('Mi primera aplicación')
+st.title('Aplicaciones Tecnológicas para el Campo')
