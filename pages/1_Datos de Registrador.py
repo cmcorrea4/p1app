@@ -1,12 +1,14 @@
 import streamlit as st
-
-st.title('Análisis de Datos')
-
-
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
 #from io import StringIO
+
+st.title('Análisis de Datos')
+
+st.subheader("Internet de las Cosas")
+
+link_text = "[Más información](http://157.230.214.127:8501/)"
 
 uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
 column_names=["Humedad","Temperatura"]
