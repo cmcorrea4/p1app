@@ -3,7 +3,7 @@ from PIL import Image
 
 st.title("Realidades extendidas")
 
-#st.header("Proyecto de cosplay original diseñado y desarrollado por la Universidad EAFIT")
+st.write("Añadir a la realidad objetos digitales con Realidad Aumentada(AR), Construir Digitalmente cualquier espacio o elemento imaginado con realidad Virtual (V)R")
 
 image = Image.open("Metaverso.png")
 new_image = image.resize((600, 400))
