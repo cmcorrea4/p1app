@@ -16,7 +16,7 @@ link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/Monito
 
 # Mostrar el hipervínculo utilizando st.markdown
 st.markdown(link_text, unsafe_allow_html=True)
-st.subheader('Registrador sin Conexión.')
+st.subheader('Recolección y análisis de datos.')
 st.write('Las Condiciones de infraestructura Eléctrica y de redes no son favorables para muchas aplicaciones en el campo.')
 uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
 column_names=["Humedad","Temperatura"]
