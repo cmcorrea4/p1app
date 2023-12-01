@@ -4,9 +4,9 @@ import pandas as pd
 from datetime import datetime, timedelta
 from PIL import Image
 
-st.title('Análisis de Datos')
+st.title('Internet de las Cosas.')
 
-st.subheader("Internet de las Cosas")
+#st.subheader("Internet de las Cosas")
 image = Image.open("IoT.jpg")
 st.write('Máquinas intercambiando Información para la generación del valor agregado.')
 new_image = image.resize((600, 400))
