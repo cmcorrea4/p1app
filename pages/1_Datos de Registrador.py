@@ -7,6 +7,9 @@ from datetime import datetime, timedelta
 st.title('Análisis de Datos')
 
 st.subheader("Internet de las Cosas")
+image = Image.open("IoT.jpg")
+new_image = image.resize((600, 400))
+st.image(new_image)
 
 link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/Monitoreo)"
 
