@@ -10,6 +10,9 @@ st.subheader("Internet de las Cosas")
 
 link_text = "[Más información](http://157.230.214.127:8501/)"
 
+# Mostrar el hipervínculo utilizando st.markdown
+st.markdown(link_text, unsafe_allow_html=True)
+
 uploaded_file = st.file_uploader("Cargue el archivo con los datos.")
 column_names=["Humedad","Temperatura"]
 if uploaded_file is not None:
