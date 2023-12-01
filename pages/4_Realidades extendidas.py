@@ -5,8 +5,9 @@ st.title("Realidades extendidas")
 
 #st.header("Proyecto de cosplay original diseñado y desarrollado por la Universidad EAFIT")
 
-#image = Image.open("bocetación.png")
-#st.image(image, caption="Ruway")
+image = Image.open("Metaverso.png")
+new_image = image.resize((600, 400))
+st.image(new_image)
 
 #st.write("Para saber más acerca del proyeto, ingresa en el siguiente link")
 
