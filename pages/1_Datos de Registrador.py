@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-#from io import StringIO
+from PIL import Image
 
 st.title('Análisis de Datos')
 
