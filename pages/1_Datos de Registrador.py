@@ -8,7 +8,7 @@ st.title('Análisis de Datos')
 
 st.subheader("Internet de las Cosas")
 
-link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/)"
+link_text = "[Monitoreo y Analisis de datos ](http://157.230.214.127:8501/Monitoreo)"
 
 # Mostrar el hipervínculo utilizando st.markdown
 st.markdown(link_text, unsafe_allow_html=True)
