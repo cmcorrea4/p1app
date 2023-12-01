@@ -25,7 +25,8 @@ st.title('Sistema Experto. 💬')
 
 image = Image.open('Wisdom_Farmer.jpg')
 
-st.image(image, width=600)
+new_image = image.resize((600, 400))
+st.image(new_image)
 
 st.write('Este sistema ayuda a resolver algunas cuestiones sobre este tema, pregunta ')
 
