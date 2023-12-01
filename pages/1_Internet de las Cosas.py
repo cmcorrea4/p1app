@@ -8,7 +8,7 @@ st.title('Internet de las Cosas.')
 
 #st.subheader("Internet de las Cosas")
 image = Image.open("IoT.jpg")
-st.write('Máquinas intercambiando Información para la generación del valor agregado.')
+st.write('Es posible ahora conectar cualquier "cosa" a Internet.  Un escenario donde el intercambio de Información entre cosas permite la generación del valor agregado.')
 new_image = image.resize((600, 400))
 st.image(new_image)
 
