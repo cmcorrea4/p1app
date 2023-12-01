@@ -8,7 +8,8 @@ from keras.models import load_model
 model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-st.title("Reconocimiento de Imágenes")
+st.title("Clasificación de Imágenes")
+st.write('Las máquinas comprenden ahora patrones y pueden ser entrenadas para tareas específicas de reconocimiento de imágenes.')
 
 img_file_buffer = st.camera_input("Toma una Foto")
 
