@@ -8,7 +8,8 @@ st.header("MEJORA DE LA PRODUCTIVIDAD A TRAVÉS DEL USO DE TECNOLOGÍAS 4.0.")
 
 
 image = Image.open("Agriculture.jpg")
-st.image(image, caption="Tecnología para Productividad")
+new_image = image.resize((600, 400))
+st.image(new_image, caption="Tecnología para Productividad")
 
 st.write('El uso de tecnologías de la Industria 4.0 permitirá mejorar las condiciones'
          'de trabajo en el campo, la calidad de los productos y su productividad.')
